@@ -49,7 +49,7 @@
 aside {
   padding: 16px;
   background: #FFFFFF;
-  width: 270px;
+  width: calc(238px);
   height: 625px;
   float: left;
   border: solid 1px #E4E7EB;

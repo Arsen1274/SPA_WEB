@@ -1,2 +1,207 @@
-div ul {
-  list-style-type: none; }
+div.wrPage1 {
+  float: left;
+  width: calc(100% - 272px);
+  padding-top: 19px 24px;
+  height: 500px;
+  display: flex;
+  flex-direction: column; }
+  div.wrPage1 ul.page1MenuUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 314px;
+    float: left;
+    margin: 0px 24px; }
+    div.wrPage1 ul.page1MenuUl li {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.05px;
+      color: #3A3B3F;
+      padding: 19px 16px; }
+      div.wrPage1 ul.page1MenuUl li.active {
+        border-bottom: 3px solid #1665D8; }
+      div.wrPage1 ul.page1MenuUl li:hover {
+        cursor: pointer;
+        color: #1665D8; }
+  div.wrPage1 .wrMainInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    div.wrPage1 .wrMainInfo .profileRightBorderSet {
+      background: #FFFFFF;
+      border: 1px solid rgba(63, 63, 68, 0.005);
+      box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+      border-radius: 4px;
+      padding: 24px; }
+    div.wrPage1 .wrMainInfo .wrProfileLeft {
+      background: white;
+      background: #FFFFFF;
+      border: 1px solid rgba(63, 63, 68, 0.005);
+      box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+      border-radius: 4px;
+      width: calc(27%-24px);
+      height: 200px;
+      padding: 24px;
+      margin: 24px; }
+      div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: -0.05px;
+        color: #9EA0A5; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftTop .wrProfileLeftTopLeftName {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: -0.06px;
+          color: #212529;
+          margin-bottom: 10px; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftTop img {
+          border-radius: 13px;
+          width: 120px;
+          height: 120px; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftTop p {
+          margin: 0px; }
+      div.wrPage1 .wrMainInfo .wrProfileLeft hr {
+        width: 100%;
+        background: #E4E7EB;
+        border: 0.5px solid #E4E7EB; }
+      div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm .wrInputFile {
+          width: 100px;
+          margin: 0px;
+          margin-top: 9px; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm input, div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm label {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 1.25px;
+          text-transform: uppercase;
+          color: #425A70;
+          background: white;
+          width: 100px;
+          height: 40px;
+          border: none;
+          margin: 0px;
+          padding: 0px; }
+          div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm input:hover, div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm label:hover {
+            cursor: pointer; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm .inputFileLabel {
+          width: 100px;
+          color: #1665D8;
+          padding-top: 10px;
+          height: 30px; }
+        div.wrPage1 .wrMainInfo .wrProfileLeft .wrProfileLeftBottom .wrProfileLeftBottomPicForm #image_uploads {
+          width: 0px; }
+    div.wrPage1 .wrMainInfo .wrProfileRight {
+      margin: 24px;
+      width: 70%; }
+      div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileBasic, div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification {
+        background: white;
+        height: auto; }
+      div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #66788A;
+        text-align: center;
+        vertical-align: center;
+        align-items: baseline;
+        border-bottom: 1px solid #E4E7EB; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileTitle p {
+          margin: 0;
+          text-align: center;
+          vertical-align: bottom; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileTitle :first-child {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.05px;
+          color: #3A3B3F;
+          margin-right: 15px; }
+      div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm {
+        padding-top: 24px; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm input, div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm button {
+          padding: 16px;
+          margin: 0px;
+          background: white;
+          border: 1px grey solid;
+          border-radius: 4px;
+          width: 30%;
+          margin-bottom: 24px; }
+          div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm input:active, div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm input:focus, div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm button:active, div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm button:focus {
+            border-color: blue; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm button:hover {
+          cursor: pointer; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm hr {
+          background: #E4E7EB;
+          border: 0.5px solid #E4E7EB; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileForm .wrProfileFormBtn {
+          margin: 24px;
+          text-transform: uppercase;
+          background: #1665D8;
+          color: white;
+          width: 158px;
+          height: 46px; }
+      div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification {
+        margin-top: 24px;
+        background: white;
+        height: auto; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification .wrProfileForm form p:nth-child(4n) {
+          margin-right: 30%; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification input {
+          width: 20px; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification p.checkboxP {
+          display: inline-block;
+          margin: 0px 10px;
+          padding: 0px;
+          width: 30%;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.15px;
+          color: rgba(0, 0, 0, 0.6); }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification .wrProfileFormBtn {
+          width: 140px;
+          height: 40px;
+          background: white;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 1.25px;
+          text-transform: uppercase;
+          color: #1665D8;
+          padding: 10px;
+          border: #1665D8 solid 1px;
+          border-radius: 4px; }
+          div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification .wrProfileFormBtn:hover {
+            cursor: pointer; }

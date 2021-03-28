@@ -77,7 +77,7 @@
 aside{
   padding: 16px;
   background: #FFFFFF;//white
-  width:270px;
+  width:calc(238px);//270-32=padding
   height:625px;
   float:left;
   border:solid 1px #E4E7EB;
