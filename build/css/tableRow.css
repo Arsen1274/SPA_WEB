@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.tableRow {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: ізфсуspace-between;
+  align-content: center;
+  border-top: 0.5px #E4E7EB solid;
+  border-bottom: 0.5px #E4E7EB solid; }
+  .tableRow form {
+    width: 20px;
+    margin: 0px;
+    padding: 15px; }
+  .tableRow .tableRowIcon {
+    width: 22px;
+    height: 22px;
+    color: white;
+    background: #1070CA;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: inherit;
+    padding: 5px;
+    margin: 10px; }
+  .tableRow p {
+    padding: 15px;
+    margin: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #3A3B3F;
+    width: 15%; }
+    .tableRow p:last-child {
+      color: #9EA0A5;
+      margin-right: auto; }

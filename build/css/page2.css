@@ -1,0 +1,59 @@
+.wrPage2 {
+  float: left;
+  background: #E5E5E5;
+  width: calc(100% - 320px);
+  height: auto;
+  padding: 19px 24px; }
+  .wrPage2 .page2Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px; }
+    .wrPage2 .page2Header .page2HeaderLeft {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      width: 70%; }
+      .wrPage2 .page2Header .page2HeaderLeft .page2HeaderLeftBtn {
+        padding-top: 10px;
+        display: flex;
+        background: white;
+        width: 106px;
+        height: 26px;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: #3A3B3F; }
+        .wrPage2 .page2Header .page2HeaderLeft .page2HeaderLeftBtn img {
+          width: 14px;
+          height: 14px;
+          margin-right: 5px; }
+      .wrPage2 .page2Header .page2HeaderLeft form {
+        width: 100%; }
+        .wrPage2 .page2Header .page2HeaderLeft form input {
+          margin-left: 15px;
+          width: 70%;
+          height: 36px;
+          padding: 0px 10px;
+          border: none;
+          border-radius: 4px;
+          background: #FFFFFF; }
+    .wrPage2 .page2Header .page2HeaderRightBtn {
+      color: white;
+      width: 140px;
+      height: 26px;
+      text-align: center;
+      padding-top: 10px;
+      background: #1665D8;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 4px; }

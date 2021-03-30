@@ -1,0 +1,48 @@
+.tableRow{
+  background: #FFFFFF;
+  //mix-blend-mode: normal;
+  display:flex;
+  flex-direction: row;
+  justify-content: ізфсуspace-between;
+  align-content: center;
+  border-top:0.5px #E4E7EB solid;//gray
+  border-bottom:0.5px #E4E7EB solid;//gray
+
+  form{
+    width:20px;
+    margin:0px;
+    padding: 15px;
+  }
+
+  .tableRowIcon {
+    width: 22px;
+    height:22px;
+    color:white;
+    background: #1070CA;//blue
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: inherit;
+    padding: 5px;
+    margin:10px;
+  }
+  p{
+    padding: 15px;
+    margin:0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #3A3B3F;
+    width:15%;
+
+    &:last-child{
+      //width: 30px;
+      color:#9EA0A5;//lite grey
+      margin-right:auto;
+    }
+  }
+
+
+}

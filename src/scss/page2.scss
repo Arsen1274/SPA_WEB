@@ -1,0 +1,82 @@
+.wrPage2{
+  float: left;
+  background:#E5E5E5;
+  $a: 100%;
+  $b: 272px+48px;
+  width: calc(#{$a} - #{$b});
+  height:auto;
+  padding:  19px 24px;
+
+  .page2Header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //padding: 24px;//----------
+    margin-bottom: 24px;
+    .page2HeaderLeft{
+      display:flex;
+      flex-direction: row;
+      justify-content: right;
+      width:70%;
+      .page2HeaderLeftBtn{
+        padding-top: 10px;
+        display:flex;
+        background: white;
+        width: 106px;
+        height:26px;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+
+        img{
+          width: 14px;
+          height: 14px;
+          margin-right: 5px;
+        }
+
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: #3A3B3F;
+      }
+      form{
+        width:100%;
+        input{
+          margin-left: 15px;
+          width:70%;
+          height:36px;
+          padding: 0px 10px;
+          border: none;
+          border-radius: 4px;
+          background: #FFFFFF;
+        }
+      }
+    }//end .page2HeaderLeft
+
+    .page2HeaderRightBtn{
+      color:white;
+      width:140px;
+      height:26px;
+      text-align: center;
+      padding-top: 10px;
+      background: #1665D8;//blue
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+
+
+  }//end .page2Header
+
+  .page2Table{
+    
+  }
+
+}
