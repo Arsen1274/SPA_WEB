@@ -60,7 +60,7 @@ function buildComponents(){
 }
 function buildPages(){
   //return gulp.src('F:/КПІ/3 курс/2 семестр/Веб/лаб 1/Project/src/html/pages/page2.html')
-   return gulp.src('./src/html/pages/page2.html')  //path.src.html)
+   return gulp.src('./src/html/pages/*.html')  //path.src.html)
     .pipe(fileinclude())
     .pipe(gulp.dest('./build/html/'))//path.build.html))
     .pipe(browserSync.stream());

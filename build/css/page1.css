@@ -118,6 +118,22 @@ div.wrPage1 {
       div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileBasic, div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification {
         background: white;
         height: auto; }
+        div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileBasic .wrProfileFormTitle, div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification .wrProfileFormTitle {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.05px;
+          color: #3A3B3F;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin-bottom: 10px; }
+          div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileBasic .wrProfileFormTitle p, div.wrPage1 .wrMainInfo .wrProfileRight .wrPprofileNotification .wrProfileFormTitle p {
+            margin: 0px 0px;
+            padding: 0px;
+            width: 36%; }
       div.wrPage1 .wrMainInfo .wrProfileRight .wrProfileTitle {
         display: flex;
         flex-direction: row;
