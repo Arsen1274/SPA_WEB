@@ -57,3 +57,22 @@
       background: #1665D8;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
       border-radius: 4px; }
+  .wrPage2 .page2Bottom {
+    margin-top: 60px;
+    border-top: solid 2px #c7cdd5; }
+    .wrPage2 .page2Bottom p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #616161;
+      margin: 0px;
+      margin-top: 20px; }
+      .wrPage2 .page2Bottom p:last-child {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6B6C6F;
+        mix-blend-mode: normal;
+        opacity: 0.5; }

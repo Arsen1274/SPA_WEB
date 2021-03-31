@@ -3,7 +3,7 @@
   //mix-blend-mode: normal;
   display:flex;
   flex-direction: row;
-  justify-content: ізфсуspace-between;
+  justify-content: space-between;
   align-content: center;
   border-top:0.5px #E4E7EB solid;//gray
   border-bottom:0.5px #E4E7EB solid;//gray
@@ -13,18 +13,25 @@
     margin:0px;
     padding: 15px;
   }
-
-  .tableRowIcon {
-    width: 22px;
-    height:22px;
-    color:white;
-    background: #1070CA;//blue
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: inherit;
-    padding: 5px;
-    margin:10px;
+  .tableRowName{
+    float:left;
+    p{
+      float:left;
+      width: auto;
+    }
+    .tableRowNameIcon {
+      width: 22px;
+      height:22px;
+      color:white;
+      background: #1070CA;//blue
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: inherit;
+      padding: 5px;
+      margin:10px;
+    }
   }
+
   p{
     padding: 15px;
     margin:0px;
@@ -37,12 +44,69 @@
     color: #3A3B3F;
     width:15%;
 
-    &:last-child{
+    &:nth-child(6){
       //width: 30px;
       color:#9EA0A5;//lite grey
-      margin-right:auto;
+    //  text-align: right;
+    //  margin-right:auto;
     }
   }
+  &:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding: 10px;
+    align-content: center;
+    height:36px;
+    p{
+      font-size: 24px;
+      color:#9EA0A5;//lite grey
+      width:7%;
+      vertical-align: middle;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.54;
+    }
+    .arrowLeft>p, .arrowRight > p {
+      font-size: 24px;
+      color:black;
+      width: 10px;
+
+
+      &:hover{
+        background: #ccddf4;//#F6F9FD;//white with blue
+        //background: red;
+      }
+    }
+    select{
+      height:40.2px;
+      border: 0px grey solid;
+    }
+  }
+
+  // &:first-child{
+  //   //width: 30px;
+  //   //color:#9EA0A5;//lite grey
+  //   p{
+  //
+  //     color:red;
+  //     &:nth-child(2){
+  //       //width: 30px;
+  //       //color:#9EA0A5;//lite grey
+  //       color: blue;
+  //       //margin-right:auto;
+  //       //margin-right:42px;
+  //     }
+  //   }
+  //   //margin-right:auto;
+  // }
 
 
 }
