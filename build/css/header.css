@@ -12,6 +12,8 @@
       margin: auto;
       margin-left: 24px;
       margin-right: 10px; }
+      .wrHeader .wrHeaderLeft .wrImg:hover {
+        cursor: pointer; }
     .wrHeader .wrHeaderLeft img {
       margin: auto;
       width: 133px;
@@ -39,6 +41,8 @@
     margin-right: 0px; }
     .wrHeader .wrHeaderRight img {
       margin: 10px; }
+      .wrHeader .wrHeaderRight img:hover {
+        cursor: pointer; }
     .wrHeader .wrHeaderRight .headerImg1 {
       width: calc(16.01px);
       height: calc(19.51px); }
@@ -55,7 +59,7 @@ aside {
   border: solid 1px #E4E7EB;
   border-top: none; }
   aside .wrAsideProfileImg {
-    margin: 85px;
+    margin: 69px;
     margin-top: 24px;
     margin-bottom: 20px; }
   aside img {
@@ -85,27 +89,34 @@ aside {
     height: 1px;
     background: #E4E7EB;
     border: 0.5px solid #E4E7EB; }
-  aside ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin: 13px 5px;
-    padding: 2px; }
-    aside ul li img {
-      width: 18.96px;
-      height: 18.96px;
-      margin: 0px 5px; }
-    aside ul li a {
-      text-decoration: none;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: -0.05px;
-      color: #66788A;
-      margin: 0px 10px; }
-  aside .wrAsideSupport p {
+  aside ul {
+    padding-left: 15px; }
+    aside ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 13px 5px;
+      padding: 2px; }
+      aside ul li a {
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.05px;
+        color: #66788A;
+        margin: 0px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        aside ul li a p {
+          margin: 0px 10px; }
+      aside ul li img {
+        width: 18.96px;
+        height: 18.96px;
+        margin: 0px 5px; }
+  aside .wrAsideSupport p:first-child {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;

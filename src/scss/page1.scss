@@ -1,16 +1,12 @@
 div.wrPage1{
   float: left;
-  //background:red;
   $a: 100%;
   $b: 272px;
   width: calc(#{$a} - #{$b});
-  //width:auto;
   padding-top:  19px 24px;
-//  width:calc(100% - 270px);
   height:500px;
   display:flex;
   flex-direction: column;
-
 
   ul.page1MenuUl{
     display:flex;
@@ -22,6 +18,7 @@ div.wrPage1{
     width:314px;
     float: left;
     margin:0px 24px;
+
     li{
       font-family: Roboto;
       font-style: normal;
@@ -31,7 +28,6 @@ div.wrPage1{
       letter-spacing: -0.05px;
       color: #3A3B3F;//black
       padding: 19px 16px;
-      //padding-bottom: 18px;
       &.active{
       border-bottom: 3px solid #1665D8; //blue
       }
@@ -55,7 +51,6 @@ div.wrPage1{
       border-radius: 4px;
       padding: 24px;
     }
-
 
     .wrProfileLeft{
       background: white;
@@ -81,7 +76,6 @@ div.wrPage1{
         letter-spacing: -0.05px;
         color: #9EA0A5;
 
-
         .wrProfileLeftTopLeftName{
           font-family: Roboto;
           font-style: normal;
@@ -106,15 +100,12 @@ div.wrPage1{
       }//end wrProfileLeftTop
 
       hr{
-        //width:calc(100%+48px);
         width:100%;
-        //height:1px;
         background: #E4E7EB;//gray
         border: 0.5px solid #E4E7EB;
       }
 
       .wrProfileLeftBottom{
-
 
         .wrProfileLeftBottomPicForm{
           display:flex;
@@ -125,7 +116,6 @@ div.wrPage1{
             width: 100px;
             margin: 0px;
             margin-top:9px;
-            //margin-top:10px;
           }
           input, label{
             font-family: Roboto;
@@ -153,10 +143,7 @@ div.wrPage1{
           .inputFileLabel{
             width: 100px;
             color:#1665D8;//blue
-            //$c: 140px;
-          //  $p: 10px;
             padding-top: 10px ;
-
             height: 30px;//calc(40px-10px);
           }
           #image_uploads{
@@ -165,7 +152,6 @@ div.wrPage1{
         }
       }//end .wrProfileLeftBottom
 
-
     }
     //end .wrProfileLeft
 
@@ -173,14 +159,11 @@ div.wrPage1{
       margin: 24px;
       $a: 70%;
       $b: 48px;
-      //width: calc(#{$a} - #{$b});
-    //  padding:24px;
       width: 70%;
-      //margin:24px;
+
       .wrProfileBasic, .wrPprofileNotification{
 
         background: white;
-        //height: 454px;
         height:auto;
 
         .wrProfileFormTitle{
@@ -219,6 +202,7 @@ div.wrPage1{
           vertical-align:center;
           align-items: baseline;
           border-bottom: 1px solid #E4E7EB;
+
           p{
             margin: 0;
             text-align: center;
@@ -250,6 +234,7 @@ div.wrPage1{
               border-color: blue;
             }
           }
+
           button:hover{
             cursor:pointer;
           }
@@ -267,18 +252,14 @@ div.wrPage1{
           }
         }
 
-
       .wrPprofileNotification{
         margin-top: 24px;
         background: white;
-      //  width: 100%;
         height: auto;
         .wrProfileForm{
           form p:nth-child(4n){
-            //color:red;
             margin-right:30%;
           }
-          //width:70%;
         }
         input{
           width:20px;
@@ -321,8 +302,6 @@ div.wrPage1{
         }
 
       }//end .wrPprofileNotification
-
-
 
     }// end wrProfileRight
 

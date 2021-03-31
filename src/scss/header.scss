@@ -1,38 +1,38 @@
 .wrHeader{
-  //padding:10;
   height: 64px;
   background: #3F51B5;//blue
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   .wrHeaderLeft{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
 
     .wrImg{
       margin:   auto;
       margin-left: 24px;
       margin-right: 10px;
 
+      &:hover{
+        cursor: pointer;
+      }
     }
+
     img{
       margin: auto;
       width: 133px;
       height: 36px;
-    //  left: 24px;
-    //  top: calc(50% - 36px/2);
     }
+
     .wrText{
       p{
-      //  background: #CDD1EA;//lifht blue
-      //  background-color: rgba(205, 209, 234, 0.2);//lifht blue
         color:#CDD1EA;
         padding: 8px 8px;
         background-color: rgba(0, 0, 0, 0.23);//lifht blue
         border-radius: 4px;
-        //opacity: 50%;
+
         span{
           border-radius: 4px;
           color: white;
@@ -40,15 +40,15 @@
           padding: 2px 4px;
           margin-right: 10px;
         }
+
         a{
           text-decoration: none;
           color:white;
-          //font-weight: 900;
-
         }
       }
     }
   }
+
   .wrHeaderRight{
     display: flex;
     flex-direction: row;
@@ -56,8 +56,12 @@
     padding:10px;
     margin: auto;
     margin-right: 0px;
+
     img{
       margin:10px;
+      &:hover{
+        cursor: pointer;
+      }
     }
 
     .headerImg1{
@@ -68,12 +72,9 @@
       width: calc(18.96px);
       height: calc(18.96px);
     }
-
   }
-
-
-
 }
+
 aside{
   padding: 16px;
   background: #FFFFFF;//white
@@ -84,11 +85,12 @@ aside{
   border-top: none;
 
   .wrAsideProfileImg{
-    margin:85px;
+    margin:69px;
     margin-top: 24px;
     margin-bottom: 20px;
 
   }
+
   img{
     width: 100px;
     height: 100px;
@@ -99,6 +101,7 @@ aside{
 
 
   }
+
   .asideProfileName{
     font-family: Roboto;
     font-size: 16px;
@@ -108,6 +111,7 @@ aside{
     color: #3A3B3F;//black
     margin:4px 0px;
   }
+
 .asideProfilePosition{
   height: 16px;
   font-family: Roboto;
@@ -126,19 +130,14 @@ aside{
 
 
     ul{
+      padding-left: 15px;
 
       li{
         display:flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: space-between;
         margin:13px 5px;
         padding:2px;
-        img{
-          width: 18.96px;
-          height: 18.96px;
-          margin: 0px 5px;
-        }
-
 
         a{
           text-decoration: none;
@@ -151,13 +150,25 @@ aside{
           color: #66788A;
           margin: 0px 10px;
 
+          display:flex;
+          flex-direction: row;
+          justify-content: space-between;
 
+          p{
+            margin: 0px 10px ;
+          }
+        }
+
+        img{
+          width: 18.96px;
+          height: 18.96px;
+          margin: 0px 5px;
         }
       }
 
     }
     .wrAsideSupport{
-      p{
+      & p:first-child {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -166,8 +177,6 @@ aside{
         color: rgba(0, 0, 0, 0.328974);
         margin-left: 20px;
       }
-
     }
-
 
 }

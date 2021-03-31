@@ -5,25 +5,9 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var fileinclude = require('gulp-file-include');
 
-function copy(done){
-  gulp.src('./src/scss/*.scss')
-    .pipe(sass({
-      errorLogToConsole: true
-    }))
-    .on('eroor', console.error.bind(console))
-    //.pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./build/css/'))
-    .pipe(browserSync.stream());
-
-    console.log('Update scss->css');
-  done();
-}
-
-
 function watchSass(){
   gulp.watch('./src/scss/*',copy)
 }
-
 
 function sync(done){
   browserSync.init({
@@ -48,8 +32,6 @@ gulp.watch('./src/scss/**/*',browserReload);
   gulp.watch('./**/*.js',browserReload);
 }
 
-
-
 function buildComponents(){
     //.pipe(fileinclude())
    return gulp.src('./src/html/components/*.html')
@@ -58,14 +40,40 @@ function buildComponents(){
     //.pipe(console.log("buildComponents DONE"));
   //done();
 }
+
 function buildPages(){
-  //return gulp.src('F:/КПІ/3 курс/2 семестр/Веб/лаб 1/Project/src/html/pages/page2.html')
-   return gulp.src('./src/html/pages/*.html')  //path.src.html)
+   return gulp.src('./src/html/**/*.html')
     .pipe(fileinclude())
-    .pipe(gulp.dest('./build/html/'))//path.build.html))
+    .pipe(gulp.dest('./build/html/'))
     .pipe(browserSync.stream());
-    //.pipe(console.log("buildPages DONE"));
-  //done();
+}
+
+function buildPagesFull(){
+   return gulp.src('./src/html/fullPages/*.html')
+    .pipe(fileinclude())
+    .pipe(gulp.dest('./build/html/fullPages/'))
+    .pipe(browserSync.stream());
+}
+
+function copy(){
+  // gulp.src('./src/scss/**/*.scss')
+  //   .pipe(sass({
+  //     errorLogToConsole: true
+  //   }))
+  //   .on('eroor', console.error.bind(console))
+  //   .pipe(gulp.dest('./build/css/'))
+  //   .pipe(browserSync.stream());
+  //
+  //   console.log('Update scss->css');
+  // done();
+  return gulp.src('./src/scss/pages/*.scss')
+    .pipe(sass({
+      errorLogToConsole: true
+    }))
+    .on('eroor', console.error.bind(console))
+    .pipe(gulp.dest('./build/css/'))
+    .pipe(browserSync.stream());
+
 }
 
 function includeMy(done) {
@@ -79,16 +87,11 @@ function includeMy(done) {
 }
 
 function html(){
-  //gulp.buildComp;
-  //gulp.start('buildComp');
-  //buildComp;
-  //gulp.task('buildComp',buildComponents);
   console.log("func html: buildComponents DONE");
-  //buildPages();
   console.log("func html: buildPages DONE");
-  return gulp.src('./src/index.html')//path.src.html)
+  return gulp.src('./src/index.html')
     .pipe(fileinclude())
-    .pipe(gulp.dest('./build'))//path.build.html))
+    .pipe(gulp.dest('./build'))
     .pipe(browserSync.stream());
 }
 
@@ -96,14 +99,6 @@ gulp.task('default2', gulp.parallel(sync,watchFiles,html));
 //gulp.task('default', gulp.parallel(sync,watchFiles,html));
 gulp.task('buildComp',buildComponents);
 gulp.task('buildPg',buildPages);
-
-//gulp.task('default',['buildComp','default1']);
-
-//gulp.task('default',['dist','default2']);
-//gulp.task('default2', ['buildComp', 'default1']);
-
-gulp.task('default',gulp.series("buildComp","buildPg",gulp.parallel(sync,watchFiles,html)))
-
-
-//exit watchSacc
-//gulp.task(copy);
+gulp.task('buildPgF',buildPagesFull)
+gulp.task('buildScss',copy)
+gulp.task('default',gulp.series("buildScss","buildComp","buildPg","buildPgF",gulp.parallel(sync,watchFiles,html)))
